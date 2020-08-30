@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/ubuntu_b_fontstyle"
+            android:gravity="center"
+            android:text="Board"
+            android:textColor="#FF000000"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id = "@+id/registerButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="right"
+            android:background="@drawable/btn_white"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="@color/colorDarkturquoise" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDimgrey"
+        android:layout_gravity="center"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDimgrey"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/cameraButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/colorWhite"
+            android:drawableTop="@drawable/camera"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="Add photo"
+            android:fontFamily="@font/ubuntu_b_fontstyle"
+            android:textColor="@color/colorBlack" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="180dp"
+            android:background="@color/colorDimgrey"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/locationButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorWhite"
+            android:drawableTop="@drawable/location"
+            android:fontFamily="@font/ubuntu_b_fontstyle"
+            android:text="My location"
+            android:textColor="@color/colorBlack" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDimgrey"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/boardTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="top|start"
+        android:paddingStart="20dp"
+        android:hint="Title"/>
+
+    <Spinner
+        android:id="@+id/boardSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="top|start"
+        android:paddingStart="12dp"
+        android:entries="@array/category" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDimgrey"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/boardPrice"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="top|start"
+        android:paddingStart="20dp"
+        android:hint="Price"/>
+
+    <EditText
+        android:id="@+id/boardStatement"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="top|start"
+        android:paddingStart="20dp"
+        android:hint="Statement"/>
+</LinearLayout>

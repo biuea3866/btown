@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/ubuntu_b_fontstyle"
+        android:gravity="center"
+        android:text="My Page"
+        android:textColor="#FF000000"
+        android:textSize="30sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDimgrey"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Name"
+            android:layout_marginTop="10dp"
+            android:textSize="24sp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_horizontal"
+            android:text="Email"
+            android:layout_marginTop="10dp"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDimgrey"
+        android:layout_gravity="center"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:columnCount="4"
+        android:rowCount="2"
+        android:layout_gravity="fill_horizontal">
+
+        <Button
+            android:id="@+id/paymentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="13dp"
+            android:background="@color/colorWhite"
+            android:drawableTop="@drawable/payment"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="Payment"
+            android:fontFamily="@font/ubuntu_b_fontstyle"
+            android:textColor="@color/colorBlack" />
+
+        <Button
+            android:id="@+id/inviteFriendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="13dp"
+            android:background="@color/colorWhite"
+            android:drawableTop="@drawable/invitefriend"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="Invite Friend"
+            android:fontFamily="@font/ubuntu_b_fontstyle"
+            android:textColor="@color/colorBlack" />
+
+        <Button
+            android:id="@+id/helpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="13dp"
+            android:background="@color/colorWhite"
+            android:drawableTop="@drawable/help"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="Help"
+            android:fontFamily="@font/ubuntu_b_fontstyle"
+            android:textColor="@color/colorBlack" />
+
+        <Button
+            android:id="@+id/creditCardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="13dp"
+            android:background="@color/colorWhite"
+            android:drawableTop="@drawable/creditcard"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="Card"
+            android:fontFamily="@font/ubuntu_b_fontstyle"
+            android:textColor="@color/colorBlack" />
+
+    </GridLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDimgrey"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Rental Status"
+            android:textSize="25sp"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/ubuntu_b_fontstyle"
+            android:textColor="@color/colorBlack"/>
+        <!--  대여 현황 데이터 베이스 정보 가져오-->
+        <!-- 마일리지 데이터 베이스 정보 가져오기 -->
+        <Button
+            android:id="@+id/mileButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_darkturquoise"
+            android:drawableLeft="@drawable/milege"
+            android:text="Mileage"
+            android:paddingStart="20dp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/ubuntu_b_fontstyle"/>
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Logout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_white"
+            android:textColor="@color/colorDarkturquoise"
+            android:fontFamily="@font/ubuntu_b_fontstyle"/>
+    </LinearLayout>
+</LinearLayout>
